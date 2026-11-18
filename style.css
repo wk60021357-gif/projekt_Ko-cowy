@@ -1,9 +1,8 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-family: 'Times New Roman', Times, serif;
 }
-.sections{
+section{
     max-width: 90%; 
     min-width: 27%;
     padding: 20px;
@@ -15,11 +14,22 @@ body{
 #main>.sections{
     width: 100%;
 }
+li{
+    padding: 5px;
+}
+:not(h1,h2){  /* Selektor dla wszytkich elementów na stronie poza nagłówkiem h1 oraz h2
+    */
+    font-family:'Roboto', sans-serif;
+}
 h1{
     font-weight: 650;
     font-size: 40px;
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
     text-align: left;
+}
+.headings{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
 }
 h2{
     padding-bottom: 10px;
@@ -30,8 +40,10 @@ h3{
 h2,th{
     color: rgb(109, 52, 16);
 }
+strong{
+    font-weight: 450;
+}
 tr{
-    border-bottom: 1px solid black;
     padding: 30px;
 }
 td,th{
@@ -61,6 +73,9 @@ table{
     display: flex;
     flex-direction: column;
 }
+#desc{
+    padding: 10px 20px 10px 20px;
+}
 img{
     width: 100%;
     height: 87%;
@@ -71,4 +86,9 @@ img{
     background-color: rgb(255, 247, 252);
     border-radius: 10px;
     padding: 20px;
+}
+
+#instructions li::marker{
+    color: rgb(109, 52, 16);
+    font-weight: 600;
 }
